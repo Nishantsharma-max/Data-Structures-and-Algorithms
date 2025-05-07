@@ -51,14 +51,14 @@ class Circular_queue():
                return ele
           
      def peek(self):
-          if not self.empty():
+          if not self.isEmpty():
                return self.items[self.start]
+     
+     def delete(self):
+          self.items=self.maxSize*[None]
+          self.top=-1
+          self.start=-1
           
-
-
-
-          
-
 
      
 test=Circular_queue(3)
@@ -75,6 +75,8 @@ print(test.enqueue(5))
 # print(test.dequeue())
 print(test.isfull())
 print(test.isEmpty())
+print(test.peek())
+test.delete()
 
 
 # print(test.isEmpty())
