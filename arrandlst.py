@@ -298,9 +298,9 @@ my_dict={"name":"nishant","age":21,"course":"cs"}
 # key=my_dict.keys()
 # print(key)
 
-# val=my_dict.setdefault("name","added")
-# print(val)
-# print(my_dict)
+val=my_dict.setdefault("name","added")
+print(val)
+print(my_dict)
 
 
 
